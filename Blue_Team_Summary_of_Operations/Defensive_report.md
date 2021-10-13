@@ -63,6 +63,8 @@ The alert is implemented as follows:
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
+![Excessive Http Errors](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_excessive_http_errors_setup.png)
+
 #### Name of Alert 2
 Alert 2 is implemented as follows:
   - **Metric**: 
