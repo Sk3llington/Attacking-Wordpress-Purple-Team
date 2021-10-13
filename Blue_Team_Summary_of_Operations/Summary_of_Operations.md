@@ -1,6 +1,6 @@
 # Blue Team Engagement
 
-### Table of Contents
+## Table of Contents
 
 - Network Topology
 - Description of Targets
