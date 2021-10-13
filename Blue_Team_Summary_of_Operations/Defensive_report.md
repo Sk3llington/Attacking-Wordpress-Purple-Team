@@ -55,28 +55,29 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 #### Excessive HTTP Errors
-_TODO: Replace `Alert 1` with the name of the alert._
 
 The alert is implemented as follows:
-  - **Metric**: Number of HTTP Response Status Code
-  - **Threshold**: Above 400 within 5 minutes
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Metric**: Queries packetbeat for Number of HTTP Response Status Code
+  - **Threshold**: Above 400 within the last 5 minutes
+  - **Vulnerability Mitigated**: Network Scan / Brute Force Attack / Unauthenticated Access
+  - **Reliability**: High
 
 ![Excessive Http Errors](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_excessive_http_errors_setup.png)
 
-#### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: 
-  - **Threshold**: 
-  - **Vulnerability Mitigated**: TODO
+#### HTTP Request Size
+The alert is implemented as follows:
+  - **Metric**: Queries packetbeat for Size of HTTP requests
+  - **Threshold**: Size of requests bytes above 3500 within the last minute
+  - **Vulnerability Mitigated**: 
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
-#### Name of Alert 3
-Alert 3 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
+![HTTP Request Size](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_request_size_monitor_setup.png)
+
+#### CPU Usage 
+This alert is implemented as follows:
+  - **Metric**: Queries metricbeat for system processes usage of CPU
+  - **Threshold**: When CPU Activity exceeds 50%
+  - **Vulnerability Mitigated**: Higher than normal 
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
 _TODO Note: Explain at least 3 alerts. Add more if time allows._
