@@ -10,6 +10,20 @@
 ### Network Topology
 _TODO: Fill out the information below._
 
+- IP Range: 192.168.1.0/24
+- Netmask: 255.255.255.0
+- Gateway: 192.168.1.1
+
+##### Machines
+
+
+|     IPv4      |  OS   | Hostname |
+| ------------- |:-----:| :-------:|
+| 192.168.1.90  | Linux | Kali     |
+| 192.168.1.100 | Linux | ELK      |
+| 192.168.1.105 | Linux | Capstone |
+
+
 The following machines were identified on the network:
 - Name of VM 1
   - **Operating System**:
