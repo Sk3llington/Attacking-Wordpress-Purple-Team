@@ -8,7 +8,6 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
 
 - IP Range: 192.168.1.0/24
 - Netmask: 255.255.255.0
