@@ -1,9 +1,9 @@
 # Attacking Wordpress
 
-### Attacking Target 1
+### Offensive Report
 
-![Red Team: Summary of Operations](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/Red_Team_Summary_of_Operations/Summary_of_Operations.md)
+![Red Team: Summary of Operations](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/Red_Team_Summary_of_Operations/Offensive_report.md)
 
-### Defending Target 1
+### Defensive Report
 
-![Blue Team: Summary of Operations](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/Blue_Team_Summary_of_Operations/Summary_of_Operations.md)
+![Blue Team: Summary of Operations](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/Blue_Team_Summary_of_Operations/Defensive_report.md)
