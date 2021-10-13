@@ -1,4 +1,4 @@
-# Red Team Engagement | Attacking Wordpress
+# Red Team Engagement
 
 ## Table of Contents
 
