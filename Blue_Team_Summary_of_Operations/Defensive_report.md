@@ -14,6 +14,8 @@ _TODO: Fill out the information below._
 - Netmask: 255.255.255.0
 - Gateway: 192.168.1.1
 
+![Network Diagram](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/Diagrams/Wordpress_purple_team_diagram.drawio.png)
+
 ##### Machines
 
 
