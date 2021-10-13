@@ -23,8 +23,8 @@ _TODO: Fill out the information below._
 | ------------- |:-----:| :-------:|
 | 192.168.1.90  | Linux | Kali     |
 | 192.168.1.100 | Linux | ELK      |
-| 192.168.1.105 | Linux | Capstone |
-
+| 192.168.1.110 | Linux | Target 1 |
+| 192.168.1.115 | Linux | Target 2 |
 
 The following machines were identified on the network:
 - Name of VM 1
