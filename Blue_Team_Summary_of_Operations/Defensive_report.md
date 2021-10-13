@@ -77,8 +77,10 @@ The alert is implemented as follows:
 This alert is implemented as follows:
   - **Metric**: Queries metricbeat for system processes usage of CPU
   - **Threshold**: When CPU Activity exceeds 50%
-  - **Vulnerability Mitigated**: Higher than normal 
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Malicious running processes 
+  - **Reliability**: High
+
+![CPU Usage](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_cpu_usage_monitor_setup.png)
 
 _TODO Note: Explain at least 3 alerts. Add more if time allows._
 
