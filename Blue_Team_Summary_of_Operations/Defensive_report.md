@@ -26,15 +26,22 @@
 | 192.168.1.115 | Linux | Target 2 |
 
 The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+- ELK
+  - **Operating System**: Ubuntu
+  - **Purpose**: Monitoring
+  - **IP Address**: 192.168.1.100
+- Capstone
+  - **Operating System**: Ubuntu
+  - **Purpose**: Machine to attack (Attacked during previous engagement)
+  - **IP Address**: 192.168.1.105
+- Target 1
+  - **Operating System**: Debian
+  - **Purpose**: Machine to attack
+  - **IP Address**: 192.168.1.110
+- Target 2
+  - **Operating System**: Debian
+  - **Purpose**: Machine to attack
+  - **IP Address**: 192.168.1.115
 
 ### Description of Targets
 _TODO: Answer the questions below._
