@@ -59,6 +59,11 @@ The following vulnerabilities were identified on **Target 1**:
     - **CVE**: CVE-2013-0235
     - **Description**: Allows remote attackers to send HTTP requests to intranet servers, and conduct port-scanning attacks, by specifying a crafted source URL for a pingback, related to a Server-Side Request Forgery (SSRF) issue.
     - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
+  - **Vulnerability**: _User Enumeration_
+    - **CVE**: 
+    - **Severity**: Medium
+    - **Description**: In a user enumeration attack, an attacker looks for subtle differences in how WordPress responds to specific requests. Depending on the response, the attacker can determine whether a user exists or not. WordPress user enumeration works on every WordPress site by default because of a WordPress feature called permalinks. Permalinks are permanent URLs to individual WordPress posts and pages
+    - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
 
 ![WPscan results](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_result.png)
 
