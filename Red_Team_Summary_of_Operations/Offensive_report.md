@@ -36,7 +36,7 @@ This scan identifies the services below as potential points of entry:
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
-The following vulnerabilities were identified on each target:
+The following vulnerabilities were identified on **Target 1**:
 
 - ### **Target 1**
 
@@ -60,6 +60,7 @@ The following vulnerabilities were identified on each target:
     - **Description**: Allows remote attackers to send HTTP requests to intranet servers, and conduct port-scanning attacks, by specifying a crafted source URL for a pingback, related to a Server-Side Request Forgery (SSRF) issue.
     - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
 
+![WPscan results](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_result.png)
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
