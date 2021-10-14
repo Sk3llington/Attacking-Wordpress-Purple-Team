@@ -85,6 +85,8 @@ wpscan -eu --url 192.168.1.110/wordpress/
 
 ![WPscan users result](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_users_result.png)
 
+I decide to try to guess steven's and michael's passwords by trying the most common one and connect via SSH. After a couple attempts I figured out michael's password: "michael" and was able to SSH into **Target** 1 as "michael". 
+
 Next, I used the following command to find the first flag:
 
 ```bash
@@ -98,3 +100,12 @@ grep -re flag1 /var/www/html/
       - **Exploit Used**
         - _User Enumeration_
     
+Next, I used the following command to find the second flag:
+
+```bash
+grep -re flag2 /var/www/
+```
+
+![Flag 2](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/finding_flag_2.png)
+
+
