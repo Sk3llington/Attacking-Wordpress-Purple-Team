@@ -7,15 +7,16 @@
 
 ### Exposed Services
 
-Network scan to identify Target 1 IP address:
+Network scan with Nmap to identify Target 1 IP address:
 
 ```bash
 $ nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "nmap_scanned_ips"}'
 ```
 ![Identify Machines on Local network](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/identified_machines_on_local_network.png)
 
-Nmap scan results for each machine reveal the below services and OS details:
+192.168.1.1 is our Gateway machine and 192.168.1.90 is the Kali VM used for the attacks. We scan the remaining IP addresses with Nmap to identify services and OS details:
 
+![Services and OS details w/ Nmap](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/network_scan_result.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
