@@ -6,14 +6,16 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
+
+Network scan to identify Target 1 IP address:
+
+```bash
+$ nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "nmap_scanned_ips"}'
+```
+![Identify Machines on Local network](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/identified_machines_on_local_network.png)
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-```bash
-$ nmap ... # TODO: Add command to Scan Target 1
-  # TODO: Insert scan output
-```
 
 This scan identifies the services below as potential points of entry:
 - Target 1
