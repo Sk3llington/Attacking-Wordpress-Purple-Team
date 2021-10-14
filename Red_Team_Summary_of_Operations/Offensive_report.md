@@ -19,9 +19,20 @@ $ nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "n
 ![Services and OS details w/ Nmap](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/network_scan_result.png)
 
 This scan identifies the services below as potential points of entry:
-- Target 1
-  - List of
-  - Exposed Services
+- **Target 1**
+  - Open port 22 with SSH 
+  - Open port 80 with Apache version 2.4.10
+  - Open port 111 with rpcbind
+  - Open port 139 with SMB
+  - Open port 445 with SMB
+
+
+- **Target 2**
+  - Open port 22 with SSH 
+  - Open port 80 with Apache version 2.4.10
+  - Open port 111 with rpcbind
+  - Open port 139 with SMB
+  - Open port 445 with SMB
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
