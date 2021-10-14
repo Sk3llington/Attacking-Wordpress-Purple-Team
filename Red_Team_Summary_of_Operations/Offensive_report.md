@@ -40,15 +40,16 @@ The following vulnerabilities were identified on each target:
 
 - **Target1**
  
-| Vulnerability              | CVE | Description                                     | Impact                            |
-|----------------------------|-----|-------------------------------------------------|-----------------------------------|
-| WordPress xml rpc pingback |     | Can be exploited by a simple POST to a specific | Target internal layers, change    |
-| WordPress XMLRPC GHOST     |     | file on an affected WordPress server            | configuration on devices          |
-| Vulnerability Scanner      |     | Used to determine hosts vulnerable to the       | If the target is vulnerable, the  |
-| CVE-2015-0235              |     | GHOST vulnerability via a call to the WordPress | system will segfault and return a |
-| WordPress XMLRPC DoS       |     | XMLRPC interface                                | server error                      |
-| CVE-2014-5266              |     | WordPress XMLRPC parsing is vulnerable to a     |                                   |
-|                            |     | XML based denial of service                     |                                   |
+| Vulnerability              | CVE           | Description                                     | Impact                            |
+|----------------------------|---------------|-------------------------------------------------|-----------------------------------|
+| WordPress xml rpc pingback |               | Can be exploited by a simple POST to a specific | Target internal layers, change    |
+| WordPress XMLRPC GHOST     |               | file on an affected WordPress server            | configuration on devices          |
+|----------------------------|---------------|-------------------------------------------------|-----------------------------------|        
+| Vulnerability Scanner      | CVE-2015-0235 | Used to determine hosts vulnerable to the       | If the target is vulnerable, the  |
+|                            |               | GHOST vulnerability via a call to the WordPress | system will segfault and return a |
+| WordPress XMLRPC DoS       | CVE-2014-5266 | XMLRPC interface                                | server error                      |
+|                            |               | WordPress XMLRPC parsing is vulnerable to a     |                                   |
+|                            |               | XML based denial of service                     |                                   |
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
