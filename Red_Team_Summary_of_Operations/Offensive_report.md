@@ -43,6 +43,7 @@ The following vulnerabilities were identified on each target:
 | Vulnerability              | CVE           | Description                                     | Impact                            |
 |----------------------------|---------------|-------------------------------------------------|-----------------------------------|
 | WordPress xml rpc pingback |               | Can be exploited by a simple POST to a specific | Target internal layers, change    |
+
 | WordPress XMLRPC GHOST     |               | file on an affected WordPress server            | configuration on devices          |
 |----------------------------|---------------|-------------------------------------------------|-----------------------------------|        
 | Vulnerability Scanner      | CVE-2015-0235 | Used to determine hosts vulnerable to the       | If the target is vulnerable, the  |
