@@ -62,7 +62,7 @@ The following vulnerabilities were identified on **Target 1**:
   - **Vulnerability**: _User Enumeration_
     - **CVE**: 
     - **Severity**: Medium
-    - **Description**: In a user enumeration attack, an attacker looks for subtle differences in how WordPress responds to specific requests. Depending on the response, the attacker can determine whether a user exists or not. WordPress user enumeration works on every WordPress site by default because of a WordPress feature called permalinks. Permalinks are permanent URLs to individual WordPress posts and pages
+    - **Description**: In a user enumeration attack, an attacker looks for subtle differences in how WordPress responds to specific requests. Depending on the response, the attacker can determine whether a user exists or not. WordPress user enumeration works on every WordPress site by default because of a WordPress feature called permalinks. Permalinks are permanent URLs to individual WordPress posts and pages.
     - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
 
 ![WPscan results](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_result.png)
