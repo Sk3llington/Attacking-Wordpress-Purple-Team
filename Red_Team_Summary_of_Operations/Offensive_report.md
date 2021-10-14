@@ -19,7 +19,7 @@ $ nmap -sn 192.168.0.0/24 | awk '/Nmap scan/{gsub(/[()]/,"",$NF); print $NF > "n
 ![Services and OS details w/ Nmap](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/network_scan_result.png)
 
 This scan identifies the services below as potential points of entry:
-- #### **Target 1**
+- ### **Target 1**
   - Open port 22 with SSH 
   - Open port 80 with Apache version 2.4.10
   - Open port 111 with rpcbind
@@ -27,7 +27,7 @@ This scan identifies the services below as potential points of entry:
   - Open port 445 with SMB
 
 
-- #### **Target 2**
+- ### **Target 2**
   - Open port 22 with SSH 
   - Open port 80 with Apache version 2.4.10
   - Open port 111 with rpcbind
@@ -50,15 +50,15 @@ The following vulnerabilities were identified on each target:
   - **Vulnerability**: _WordPress XMLRPC DoS_
     - **CVE**: CVE-2014-5266
     - **Description**: WordPress XMLRPC parsing is vulnerable to a XML based denial of service
-    - **Impact**:
-  - **Vulnerability**: _
-    - **CVE**:
-    - **Description**:
-    - **Impact**:
-  - **Vulnerability**: _
-    - **CVE**:
-    - **Description**:
-    - **Impact**:
+    - **Impact**: It affects WordPress 3.5 - 3.9.2 (3.8.4 and 3.7.4 are also patched)
+  - **Vulnerability**: _WordPress XML-RPC Username/Password Login Scanner_
+    - **CVE**: CVE-1999-0502
+    - **Description**: Attempts to authenticate against a WordPress-site (via XMLRPC) using username and password combinations
+    - **Impact**: Login access
+  - **Vulnerability**: _WordPress Pingback Locator_
+    - **CVE**: CVE-2013-0235
+    - **Description**: Will scan for wordpress sites with the Pingback API enabled
+    - **Impact**: Scan for wordpress sites with the Pingback API enabled
   - **Vulnerability**: _
     - **CVE**:
     - **Description**:
