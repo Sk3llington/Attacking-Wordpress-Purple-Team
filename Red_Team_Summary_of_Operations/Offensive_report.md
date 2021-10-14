@@ -85,7 +85,16 @@ wpscan -eu --url 192.168.1.110/wordpress/
 
 ![WPscan users result](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_users_result.png)
 
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
-    - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+Next, I used the following command to find the first flag:
+
+```bash
+grep -re flag1 /var/www/html/
+```
+
+![Flag 1](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/finding_flag_1.png)
+
+
+  - `flag2.txt`: _flag2{fc3fd58dcdad9ab23faca6e9a36e581c}_
+      - **Exploit Used**
+        - _User Enumeration_
+    
