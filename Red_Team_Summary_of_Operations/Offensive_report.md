@@ -67,14 +67,13 @@ The following vulnerabilities were identified on **Target 1**:
 
 ![WPscan results](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_result.png)
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`: _flag1{b9bbcb33e11b80be759c4e844862482d}
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
