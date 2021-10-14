@@ -39,15 +39,34 @@ _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 The following vulnerabilities were identified on each target:
 
 - #### **Target 1**
-  - **Vulnerability**: WordPress xml rpc pingback
+  - **Vulnerability**: _WordPress XML RPC Pingback_
     - **CVE**:
     - **Description**: Can be exploited by a simple POST to a specific file on an affected WordPress server
     - **Impact**: Target internal layers, change configuration on devices
-  - **Vulnerability**:
+  - **Vulnerability**:_WordPress XMLRPC GHOST Scanner_
+    - **CVE**: CVE-2015-0235
+    - **Description**: Used to determine hosts vulnerable to the  GHOST vulnerability via a call to the WordPress XMLRPC interface
+    - **Impact**: If the target is vulnerable, the system will segfault and return a server error
+  - **Vulnerability**:_WordPress XMLRPC DoS_
+    - **CVE**: CVE-2014-5266
+    - **Description**: WordPress XMLRPC parsing is vulnerable to a XML based denial of service
+    - **Impact**:
+  - **Vulnerability**:_
     - **CVE**:
     - **Description**:
     - **Impact**:
-
+  - **Vulnerability**:_
+    - **CVE**:
+    - **Description**:
+    - **Impact**:
+  - **Vulnerability**:_
+    - **CVE**:
+    - **Description**:
+    - **Impact**:
+  - **Vulnerability**:_
+    - **CVE**:
+    - **Description**:
+    - **Impact**:
 
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
