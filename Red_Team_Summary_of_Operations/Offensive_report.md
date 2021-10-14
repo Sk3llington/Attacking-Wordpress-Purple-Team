@@ -59,14 +59,6 @@ The following vulnerabilities were identified on each target:
     - **CVE**: CVE-2013-0235
     - **Description**: Will scan for wordpress sites with the Pingback API enabled
     - **Impact**: Scan for wordpress sites with the Pingback API enabled
-  - **Vulnerability**: _
-    - **CVE**:
-    - **Description**:
-    - **Impact**:
-  - **Vulnerability**: _
-    - **CVE**:
-    - **Description**:
-    - **Impact**:
 
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
