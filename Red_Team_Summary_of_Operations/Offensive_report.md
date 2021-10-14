@@ -73,10 +73,18 @@ _TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _flag1{b9bbcb33e11b80be759c4e844862482d}
+  - `flag1.txt`: _flag1{b9bbcb33e11b80be759c4e844862482d}_
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - _User Enumeration_
+
+**Command run**:
+
+```bash
+wpscan -eu --url 192.168.1.110/wordpress/
+```
+
+![WPscan users result](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_users_result.png)
+
   - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
