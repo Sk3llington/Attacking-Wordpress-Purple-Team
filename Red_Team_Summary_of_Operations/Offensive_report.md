@@ -44,21 +44,21 @@ The following vulnerabilities were identified on each target:
     - **CVE**: CVE-2015-0235
     - **Severity**: High
     - **Description**: A remote attacker could use this flaw to execute arbitary code with the permissions of the user running the application.
-    - **Impact**: Can lead to Remote Code Execution on the victim's machine 
+    - **Impact**: Can lead to Remote Code Execution on the victim's machine. 
   - **Vulnerability**: _WordPress XMLRPC DoS_
     - **CVE**: CVE-2014-5266
     - **Severity**: Medium
-    - **Description**: No limitation in the number of elements in an XML document, allowing remote attackers to cause a DoS (CPU consumption) via a large document.
-    - **Impact**: Can lead to Denial of Service attacks and put a website offline
+    - **Description**: No limitation in the number of elements in an XML document, allowing remote attackers to cause a Denial of Service (CPU consumption) via a large document.
+    - **Impact**: Can put a website offline.
   - **Vulnerability**: _WordPress XML-RPC Username/Password Login Scanner_
     - **CVE**: CVE-1999-0502
     - **Severity**: High
-    - **Description**: Attempts to authenticate against a WordPress-site using default, null or blank username and password combinations
-    - **Impact**: Can lead to Unauthorized Access
+    - **Description**: Attempts to authenticate against a WordPress-site using default, null or blank username and password combinations.
+    - **Impact**: Can lead to Unauthorized Access.
   - **Vulnerability**: _WordPress Pingback Locator_
     - **CVE**: CVE-2013-0235
-    - **Description**: The XMLRPC API in WordPress before 3.5.1 allows remote attackers to send HTTP requests to intranet servers, and conduct port-scanning attacks, by specifying a crafted source URL for a pingback, related to a Server-Side Request Forgery (SSRF) issue.
-    - **Impact**: This vulnerability can potentially be used to expose information and compromise a site
+    - **Description**: Allows remote attackers to send HTTP requests to intranet servers, and conduct port-scanning attacks, by specifying a crafted source URL for a pingback, related to a Server-Side Request Forgery (SSRF) issue.
+    - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
 
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
