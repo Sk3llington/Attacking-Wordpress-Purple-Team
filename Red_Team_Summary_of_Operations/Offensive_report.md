@@ -41,8 +41,14 @@ The following vulnerabilities were identified on each target:
 - #### **Target 1**
   - **Vulnerability**: WordPress xml rpc pingback
     - **CVE**:
-    - ***Description**: Can be exploited by a simple POST to a specific file on an affected WordPress server
+    - **Description**: Can be exploited by a simple POST to a specific file on an affected WordPress server
     - **Impact**: Target internal layers, change configuration on devices
+  - **Vulnerability**:
+    - **CVE**:
+    - **Description**:
+    - **Impact**:
+
+
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
