@@ -44,7 +44,7 @@ The following machines were identified on the network:
   - **IP Address**: 192.168.1.115
 
 ### Description of Targets
-_TODO: Answer the questions below._
+
 
 The target of this attack was: `Target 1` (192.168.1.110).
 
