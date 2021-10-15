@@ -88,7 +88,7 @@ This alert is implemented as follows:
 
 ![CPU Usage](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_cpu_usage_monitor_setup.png)
 
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
+
 
 ### Suggestions for Going Further (Optional)
 _TODO_: 
