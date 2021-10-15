@@ -183,5 +183,4 @@ After a few attempts and researching how to gain root on the machine I found the
 $ sudo python -c 'import pty;pty.spawn("/bin/bash");'
 ```
 
-
-
+![gained flag 4](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/gained_root_flag4.png)
