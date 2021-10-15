@@ -68,7 +68,7 @@ The following vulnerabilities were identified on **Target 1**:
 
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
+
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
