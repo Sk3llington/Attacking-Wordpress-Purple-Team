@@ -42,8 +42,8 @@ The following vulnerabilities were identified on **Target 1**:
   - **Vulnerability**: _WordPress XMLRPC GHOST Scanner_
     - **CVE**: CVE-2015-0235
     - **Severity**: High
-    - **Description**: A remote attacker could use this flaw to execute arbitary code with the permissions of the user running the application.
-    - **Impact**: Can lead to Remote Code Execution on the victim's machine. 
+    - **Description**: A remote attacker could use this flaw to execute arbitrary code with the permissions of the user running the application.
+    - **Impact**: This can lead to Remote Code Execution on the victim's machine. 
   - **Vulnerability**: _WordPress XMLRPC DoS_
     - **CVE**: CVE-2014-5266
     - **Severity**: Medium
@@ -52,8 +52,8 @@ The following vulnerabilities were identified on **Target 1**:
   - **Vulnerability**: _WordPress XML-RPC Username/Password Login Scanner_
     - **CVE**: CVE-1999-0502
     - **Severity**: High
-    - **Description**: Attempts to authenticate against a WordPress-site using default, null or blank username and password combinations.
-    - **Impact**: Can lead to Unauthorized Access.
+    - **Description**: Attempts to authenticate against a WordPress-site using the default, null, or blank username and password combinations.
+    - **Impact**: This can lead to Unauthorized Access.
   - **Vulnerability**: _WordPress Pingback Locator_
     - **CVE**: CVE-2013-0235
     - **Description**: Allows remote attackers to send HTTP requests to intranet servers, and conduct port-scanning attacks, by specifying a crafted source URL for a pingback, related to a Server-Side Request Forgery (SSRF) issue.
@@ -84,7 +84,7 @@ wpscan -eu --url 192.168.1.110/wordpress/
 
 ![WPscan users result](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_users_result.png)
 
-I decide to try to guess steven's and michael's passwords by trying the most common one and connect via SSH. After a couple attempts I figured out michael's password: "michael" and was able to SSH into **Target** 1 as "michael". Since we know a wordpress website is running, I move to the website root directory.
+I decided to try to guess steven's and michael's passwords by trying the most common one and connect via SSH. After a couple of attempts, I figured out michael's password: "michael", and was able to SSH into **Target** 1 as "michael". Since we know a WordPress website is running, I move to the website root directory.
 
 Next, I used the following command to find the first flag:
 
@@ -129,13 +129,13 @@ show databases;
 ![show databases](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/show_databses.png)
 
 
-Next we switch to wordpress database and list the available tables:
+Next, we switch to the WordPress database and list the available tables:
 
 
 ![switch to wordpress table and list](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/switch_to_wordpress_table_and_list.png)
 
 
-Next we use the follwing command to list data about each users in the "wp_users" table, successfully getting hashes for users steven and michael:
+Next, we use the following command to list data about each user in the "wp_users" table, successfully getting hashes for users steven and michael:
 
 
 ```
@@ -145,7 +145,7 @@ SELECT * FROM wp_users;
 ![listing all users data](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/listing_all_users_data.png)
 
 
-Next I saved steven and michael hashes into a .txt file to try to crack them later:
+Next, I saved steven and michael hashes into a .txt file to try to crack them later:
 
 
 ![txt file with hashes](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/txt_file_with_hashes.png)
