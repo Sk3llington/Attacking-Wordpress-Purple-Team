@@ -114,3 +114,74 @@ I found the file located in _/html/wordpress/_ and run a `cat` command to read t
 ![MySQL database password](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/MySQL_database_password.png)
 
 
+Next, we access the database using the compromised credentials:
+
+
+![Successful MySQL login](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/successful_MySQL_login.png)
+
+
+Now that we are connected to the database, we start by listing all databases with the following command:
+
+```
+show databases;
+```
+
+![show databases](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/show_databses.png)
+
+
+Next we switch to wordpress database and list the available tables:
+
+
+![switch to wordpress table and list](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/switch_to_wordpress_table_and_list.png)
+
+
+Next we use the follwing command to list data about each users in the "wp_users" table, successfully getting hashes for users steven and michael:
+
+
+```
+SELECT * FROM wp_users;
+```
+
+![listing all users data](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/listing_all_users_data.png)
+
+
+Next I saved steven and michael hashes into a .txt file to try to crack them later:
+
+
+![txt file with hashes](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/txt_file_with_hashes.png)
+
+
+Next, I explored the database further and found 2 additional flags, flag 3 & flag 4, running the following command:
+
+
+```
+SELECT * FROM wp_posts;
+```
+
+
+![flag3 and flag4 found](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/flag3_and_flag4_found_database.png)
+
+
+Next, I run `John` to try to crack steven and michael's passwords, and I was able to obtain steven's password: `pink84`
+
+
+![cracking steven's password](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/cracking_steven_password.png)
+
+
+![cracking steven's password](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/cracking_steven_password_2.png)
+
+
+Next, I use steven's credentials to SSH into the target:
+
+
+![ssh as steven](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/ssh_as_steven_target.png)
+
+
+After a few attempts and researching how to gain root on the machine I found the following command:
+
+```
+$ sudo python -c 'import pty;pty.spawn("/bin/bash");'
+```
+
+
+
