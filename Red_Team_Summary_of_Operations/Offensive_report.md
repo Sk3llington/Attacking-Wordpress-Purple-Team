@@ -34,7 +34,6 @@ This scan identifies the services below as potential points of entry:
   - Open port 139 with SMB
   - Open port 445 with SMB
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
 The following vulnerabilities were identified on **Target 1**:
 
