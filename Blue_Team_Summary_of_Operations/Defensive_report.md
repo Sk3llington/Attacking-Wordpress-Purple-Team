@@ -68,8 +68,8 @@ The alert is implemented as follows:
 The alert is implemented as follows:
   - **Metric**: Queries packetbeat for Size of HTTP requests
   - **Threshold**: Size of requests bytes above 3500 within the last minute
-  - **Vulnerability Mitigated**: 
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Unusual Web requests (i.e., compared to regular HTTP requests)
+  - **Reliability**: Medium
 
 ![HTTP Request Size](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_request_size_monitor_setup.png)
 
