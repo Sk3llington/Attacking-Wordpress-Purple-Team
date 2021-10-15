@@ -20,7 +20,6 @@
 
 |     IPv4      |  OS        | Hostname |
 | ------------- |:----------:|:--------:|
-| 192.168.1.1   | Windows 10 |          |
 | 192.168.1.90  | Linux      | Kali     |
 | 192.168.1.100 | Linux      | ELK      |
 | 192.168.1.105 | Linux      | Capstone |
@@ -28,20 +27,25 @@
 | 192.168.1.115 | Linux      | Target 2 |
 
 The following machines were identified on the network:
+
+- Kali
+  - **Operating System**: Linux | Ubuntu
+  - **Purpose**: Monitoring
+  - **IP Address**: 192.168.1.100
 - ELK
-  - **Operating System**: Ubuntu
+  - **Operating System**: Linux | Ubuntu
   - **Purpose**: Monitoring
   - **IP Address**: 192.168.1.100
 - Capstone
-  - **Operating System**: Ubuntu
+  - **Operating System**: Linux | Ubuntu
   - **Purpose**: Machine to attack (Attacked during previous engagement)
   - **IP Address**: 192.168.1.105
 - Target 1
-  - **Operating System**: Debian
+  - **Operating System**: Linux | Debian
   - **Purpose**: Machine to attack
   - **IP Address**: 192.168.1.110
 - Target 2
-  - **Operating System**: Debian
+  - **Operating System**: Linux | Debian
   - **Purpose**: Machine to attack
   - **IP Address**: 192.168.1.115
 
