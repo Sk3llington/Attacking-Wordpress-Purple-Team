@@ -54,13 +54,13 @@ The following machines were identified on the network:
 
 The target of this attack was: `Target 1` (192.168.1.110).
 
-Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
+**Target 1** is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
 ### Monitoring the Targets
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### Excessive HTTP Errors
+#### **Excessive HTTP Errors**
 
 The alert is implemented as follows:
   - **Metric**: Queries packetbeat for Number of HTTP Response Status Code
@@ -70,7 +70,7 @@ The alert is implemented as follows:
 
 ![Excessive Http Errors](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_excessive_http_errors_setup.png)
 
-#### HTTP Request Size
+#### **HTTP Request Size**
 The alert is implemented as follows:
   - **Metric**: Queries packetbeat for Size of HTTP requests
   - **Threshold**: Size of requests bytes above 3500 within the last minute
@@ -79,7 +79,7 @@ The alert is implemented as follows:
 
 ![HTTP Request Size](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/kibana_packetbeat_request_size_monitor_setup.png)
 
-#### CPU Usage 
+#### **CPU Usage** 
 This alert is implemented as follows:
   - **Metric**: Queries metricbeat for system processes usage of CPU
   - **Threshold**: When CPU Activity exceeds 50%
