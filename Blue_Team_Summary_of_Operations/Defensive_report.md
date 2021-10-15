@@ -30,7 +30,7 @@ The following machines were identified on the network:
 
 - Kali
   - **Operating System**: Debian
-  - **Purpose**: Monitoring
+  - **Purpose**: Attacker VM
   - **IP Address**: 192.168.1.100
 - ELK
   - **Operating System**: Ubuntu
