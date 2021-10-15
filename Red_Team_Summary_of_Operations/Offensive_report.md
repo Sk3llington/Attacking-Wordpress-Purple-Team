@@ -48,7 +48,7 @@ The following vulnerabilities were identified on **Target 1**:
     - **CVE**: CVE-2014-5266
     - **Severity**: Medium
     - **Description**: No limitation in the number of elements in an XML document, allowing remote attackers to cause a Denial of Service (CPU consumption) via a large document.
-    - **Impact**: Can put a website offline.
+    - **Impact**: Can take a website offline.
   - **Vulnerability**: _WordPress XML-RPC Username/Password Login Scanner_
     - **CVE**: CVE-1999-0502
     - **Severity**: High
