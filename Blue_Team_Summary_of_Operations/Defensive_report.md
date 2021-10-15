@@ -29,7 +29,7 @@
 The following machines were identified on the network:
 
 - Kali
-  - **Operating System**: Linux | Ubuntu
+  - **Operating System**: Linux | Debian
   - **Purpose**: Monitoring
   - **IP Address**: 192.168.1.100
 - ELK
