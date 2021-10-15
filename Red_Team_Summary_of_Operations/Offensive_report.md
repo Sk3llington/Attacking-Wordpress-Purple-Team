@@ -84,7 +84,7 @@ wpscan -eu --url 192.168.1.110/wordpress/
 
 ![WPscan users result](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_users_result.png)
 
-I decide to try to guess steven's and michael's passwords by trying the most common one and connect via SSH. After a couple attempts I figured out michael's password: "michael" and was able to SSH into **Target** 1 as "michael". 
+I decide to try to guess steven's and michael's passwords by trying the most common one and connect via SSH. After a couple attempts I figured out michael's password: "michael" and was able to SSH into **Target** 1 as "michael". Since we know a wordpress website is running, I move to the website root directory.
 
 Next, I used the following command to find the first flag:
 
@@ -107,4 +107,8 @@ grep -re flag2 /var/www/
 
 ![Flag 2](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/finding_flag_2.png)
 
+Next, we need to locate a MySQL database password. I decide to explore _/var/www/html_ and focus my search on the file `wp-config.php`. This file is a core WordPress file that contains information about the database, including the name, host, username, and password.
 
+I found the file located in _/html/wordpress/_ and run a `cat` command to read the file and found the password to the MySQL database:
+
+![MySQL database password](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/MySQL_database_password.png)
