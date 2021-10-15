@@ -109,6 +109,6 @@ grep -re flag2 /var/www/
 
 Next, we need to locate a MySQL database password. I decide to explore _/var/www/html_ and focus my search on the file `wp-config.php`. This file is a core WordPress file that contains information about the database, including the name, host, username, and password.
 
-I found the file located in _/html/wordpress/_ and run a `cat` command to read the file and found the password to the MySQL database:
+I found the file located in _/html/wordpress/_ and run a `cat` command to read the file and found the password to the MySQL database, i.e., `R@v3nSecurity`
 
 ![MySQL database password](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/MySQL_database_password.png)
