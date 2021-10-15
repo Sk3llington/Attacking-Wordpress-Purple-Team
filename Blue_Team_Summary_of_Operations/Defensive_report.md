@@ -18,12 +18,13 @@
 ##### Machines
 
 
-|     IPv4      |  OS   | Hostname |
-| ------------- |:-----:| :-------:|
-| 192.168.1.90  | Linux | Kali     |
-| 192.168.1.100 | Linux | ELK      |
-| 192.168.1.110 | Linux | Target 1 |
-| 192.168.1.115 | Linux | Target 2 |
+|     IPv4      |  OS        | Hostname |
+| ------------- |:----------:|:--------:|
+| 192.168.1.1   | Windows 10 |          |
+| 192.168.1.90  | Linux      | Kali     |
+| 192.168.1.100 | Linux      | ELK      |
+| 192.168.1.110 | Linux      | Target 1 |
+| 192.168.1.115 | Linux      | Target 2 |
 
 The following machines were identified on the network:
 - ELK
