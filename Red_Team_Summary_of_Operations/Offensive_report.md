@@ -169,6 +169,11 @@ SELECT * FROM wp_posts;
 ![flag3 and flag4 found](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/flag3_and_flag4_found_database.png)
 
 
+  - `flag4.txt`: _flag4{715dea6c055b9fe3337544932f2941ce}_
+      - **Exploit Used**
+        - _Weak Password Policy & Privilege Escalation_
+
+
 Next, I run `John` to try to crack steven and michael's passwords, and I was able to obtain steven's password: `pink84`
 
 
@@ -184,7 +189,9 @@ Next, I use steven's credentials to SSH into the target:
 ![ssh as steven](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/ssh_as_steven_target.png)
 
 
-After a few attempts and researching how to gain root on the machine I found the following command:
+
+Once logged in as “steven” we try to switch users to root using the `su` command but are unable to do it because of the absence of a controlling terminal (TTY). We use the following command to bypass this issue and obtain root access and finally rooting the machine: 
+
 
 ```
 $ sudo python -c 'import pty;pty.spawn("/bin/bash");'
