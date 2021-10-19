@@ -74,7 +74,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`: _flag1{b9bbcb33e11b80be759c4e844862482d}_
     - **Exploit Used**
-      - _User Enumeration_
+      - _User Enumeration & Weak Password Policy_
 
 **Command run**:
 
@@ -97,7 +97,7 @@ grep -re flag1 /var/www/html/
 
   - `flag2.txt`: _flag2{fc3fd58dcdad9ab23faca6e9a36e581c}_
       - **Exploit Used**
-        - _User Enumeration_
+        - _User Enumeration & Weak Password Policy_
     
 Next, I used the following command to find the second flag:
 
@@ -106,6 +106,13 @@ grep -re flag2 /var/www/
 ```
 
 ![Flag 2](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/finding_flag_2.png)
+
+
+- `flag3.txt`: _flag3{afc01ab56b50591e7dccf93122770cd2}_
+      - **Exploit Used**
+        - _Unprotected Access to `wp-config.php` and Absence of Data-at-Rest Encryption_
+
+
 
 Next, we need to locate a MySQL database password. I decide to explore _/var/www/html_ and focus my search on the file `wp-config.php`. This file is a core WordPress file that contains information about the database, including the name, host, username, and password.
 
