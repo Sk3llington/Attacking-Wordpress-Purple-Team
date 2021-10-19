@@ -108,7 +108,7 @@ grep -re flag2 /var/www/
 ![Flag 2](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/finding_flag_2.png)
 
 
-- `flag3.txt`: _flag3{afc01ab56b50591e7dccf93122770cd2}_
+  - `flag3.txt`: _flag3{afc01ab56b50591e7dccf93122770cd2}_
       - **Exploit Used**
         - _Unprotected Access to `wp-config.php` and Absence of Data-at-Rest Encryption_
 
