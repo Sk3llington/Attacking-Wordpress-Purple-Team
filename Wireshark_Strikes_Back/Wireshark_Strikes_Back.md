@@ -2,7 +2,7 @@
 
 ### Time Thieves
 
-_At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these time thieves:_
+_At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these thieves:_
 
 - They have set up an Active Directory network.
 - They are constantly watching videos on YouTube.
@@ -54,7 +54,7 @@ _As a bonus, retrieve the desktop background of the Windows host._
 
 
 
-IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
+_IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement._
 
 
 IT shared the following about the torrent activity:
