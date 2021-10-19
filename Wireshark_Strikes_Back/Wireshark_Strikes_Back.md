@@ -48,7 +48,7 @@ What are the IP addresses used in the actual infection traffic?
 
 
 
-As a bonus, retrieve the desktop background of the Windows host.
+_As a bonus, retrieve the desktop background of the Windows host._
 
 ### Illegal Downloads
 
@@ -65,11 +65,14 @@ IT shared the following about the torrent activity:
 - The DC is associated with the domain dogoftheyear.net.
 
 
-Your task is to isolate torrent traffic and answer the following questions:
+**Your task is to isolate torrent traffic and answer the following questions:**
 
 Find the following information about the machine with IP address 10.0.0.201:
-MAC address
-Windows username
-OS version
+
+
+- MAC address
+- Windows username
+- OS version
+
 
 Which torrent file did the user download?
