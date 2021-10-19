@@ -61,8 +61,28 @@ The following vulnerabilities were identified on **Target 1**:
   - **Vulnerability**: _User Enumeration_
     - **CVE**: 
     - **Severity**: Medium
-    - **Description**: In a user enumeration attack, an attacker looks for subtle differences in how WordPress responds to specific requests. Depending on the response, the attacker can determine whether a user exists or not. WordPress user enumeration works on every WordPress site by default because of a WordPress feature called permalinks. Permalinks are permanent URLs to individual WordPress posts and pages.
+    - **Description**: An attacker can determine whether a user exists or not. WordPress user enumeration works on every WordPress site by default because of a WordPress feature called permalinks. Permalinks are permanent URLs to individual WordPress posts and pages.
     - **Impact**: This vulnerability can potentially be used to expose information and compromise a site.
+  - **Vulnerability**: _Unprotected Access to ‘wp-config.php’_
+    - **CVE**:
+    - **Severity**: High
+    - **Description**: Unauthorized access to this file leads to the leak of all the necessary information required to access the database, such as usernames, passwords, secret keys, etc.
+    - **Impact**: This vulnerability is used to further compromise a system, allowing an attacker to gain access to critical data and move laterally within the network/system.
+  - **Vulnerability**: _Absence of Data-At-Rest Encryption_
+    - **CVE**:
+    - **Severity**: High
+    - **Description**: Usernames, passwords hashes, and secret keys are directly accessible in plaintext form.
+    - **Impact**: An attacker can have direct access to critical ready-to-use data, and password hashes that can potentially be cracked.
+  - **Vulnerability**: _Weak Password Policy_
+    - **CVE**:
+    - **Severity**: High
+    - **Description**: Passwords are too short and not complex enough to resist a dictionary or rainbow table attack.
+    - **Impact**: An attacker can gain unauthorized access to networks and systems and/or escalate privileges once a system is compromised.
+  - **Vulnerability**: _Privilege Escalation_
+    - **CVE**:
+    - **Severity**: High
+    - **Description**:An attacker can use compromised credentials or vulnerabilities in a system to obtain higher privileges allowing greater control over a network or system.
+    - **Impact**: Allow an attacker to move laterally within a network or system and access critical data, resulting in the theft of the data, rogue encrypting, and/or its ransoming.
 
 ![WPscan results](https://github.com/Sk3llington/Attacking-Wordpress-Purple-Team/blob/main/images/wp_scan_result.png)
 
@@ -190,7 +210,7 @@ Next, I use steven's credentials to SSH into the target:
 
 
 
-Once logged in as “steven” we try to switch users to root using the `su` command but are unable to do it because of the absence of a controlling terminal (TTY). We use the following command to bypass this issue and obtain root access and finally rooting the machine: 
+Once logged in as “steven” we try to switch users to root using the `su` command but are unable to do it because of the absence of a controlling terminal (TTY). We use the following command to bypass this issue and obtain root access and discovering the last flag: 
 
 
 ```
